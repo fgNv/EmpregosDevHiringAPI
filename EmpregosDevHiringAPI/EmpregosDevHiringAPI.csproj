@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Abstractions\" />
-    <Folder Include="Persistence\Features\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

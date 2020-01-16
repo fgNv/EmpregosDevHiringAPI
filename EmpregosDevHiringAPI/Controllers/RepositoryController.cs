@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using EmpregosDevHiringAPI.External;
 using EmpregosDevHiringAPI.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmpregosDevHiringAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RepositoriesController : ControllerBase
+    public class RepositoryController : ControllerBase
     {
         private readonly GitHubApi _gitHubApi;
 
-        public RepositoriesController(GitHubApi gitHubApi)
+        public RepositoryController(GitHubApi gitHubApi)
         {
             _gitHubApi = gitHubApi;
         }
